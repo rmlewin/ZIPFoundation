@@ -189,7 +189,7 @@ extension Archive {
 
     // MARK: - Helpers
 
-    private func writeLocalFileHeader(path: String, compressionMethod: CompressionMethod,
+    func writeLocalFileHeader(path: String, compressionMethod: CompressionMethod,
                                       size: (uncompressed: UInt32, compressed: UInt32),
                                       checksum: CRC32,
                                       modificationDateTime: (UInt16, UInt16)) throws -> LocalFileHeader {

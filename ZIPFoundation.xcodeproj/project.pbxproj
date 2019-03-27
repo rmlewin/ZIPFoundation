@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		790E636A224C138800987B4B /* Compressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790E6369224C138800987B4B /* Compressor.swift */; };
+		79A1D5792247C6F400B07919 /* ArchiveStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A1D5782247C6F400B07919 /* ArchiveStream.swift */; };
 		BA3716AB21F0A238006E54E6 /* ZIPFoundationProgressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3716A921F0A1AC006E54E6 /* ZIPFoundationProgressTests.swift */; };
 		OBJ_33 /* ZIPFoundationDataSerializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* ZIPFoundationDataSerializationTests.swift */; };
 		OBJ_34 /* ZIPFoundationEntryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* ZIPFoundationEntryTests.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		790E6369224C138800987B4B /* Compressor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compressor.swift; sourceTree = "<group>"; };
+		79A1D5782247C6F400B07919 /* ArchiveStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveStream.swift; sourceTree = "<group>"; };
 		BA3716A921F0A1AC006E54E6 /* ZIPFoundationProgressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZIPFoundationProgressTests.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Archive+Writing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Archive+Writing.swift"; sourceTree = "<group>"; };
 		OBJ_11 /* Archive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Archive.swift; sourceTree = "<group>"; };
@@ -130,8 +134,10 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_11 /* Archive.swift */,
+				79A1D5782247C6F400B07919 /* ArchiveStream.swift */,
 				OBJ_9 /* Archive+Reading.swift */,
 				OBJ_10 /* Archive+Writing.swift */,
+				790E6369224C138800987B4B /* Compressor.swift */,
 				OBJ_14 /* Entry.swift */,
 				OBJ_12 /* Data+Compression.swift */,
 				OBJ_13 /* Data+Serialization.swift */,
@@ -184,10 +190,10 @@
 		OBJ_1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
 				TargetAttributes = {
 					"ZIPFoundation::ZIPFoundation" = {
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1020;
 					};
 					"ZIPFoundation::ZIPFoundationTests" = {
 						LastSwiftMigration = 0900;
@@ -196,10 +202,11 @@
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "ZIPFoundation" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = OBJ_5;
 			productRefGroup = OBJ_25 /* Products */;
@@ -249,9 +256,11 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_48 /* Archive+Reading.swift in Sources */,
+				790E636A224C138800987B4B /* Compressor.swift in Sources */,
 				OBJ_49 /* Archive+Writing.swift in Sources */,
 				OBJ_50 /* Archive.swift in Sources */,
 				OBJ_51 /* Data+Compression.swift in Sources */,
+				79A1D5792247C6F400B07919 /* ArchiveStream.swift in Sources */,
 				OBJ_52 /* Data+Serialization.swift in Sources */,
 				OBJ_53 /* Entry.swift in Sources */,
 				OBJ_54 /* FileManager+ZIP.swift in Sources */,
@@ -272,6 +281,7 @@
 		OBJ_3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -362,6 +372,7 @@
 		OBJ_4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
